@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/home/home'
+/*import Home from '@/components/home/home'
 import Layout from '@/components/layout'
 import Login from '@/components/login'
 import Detail from '@/components/detial/detail'
 import Mixed from '@/components/mixed/mixed'
-import MixedDetail from '@/components/detial/mixedDetail'
+import MixedDetail from '@/components/detial/mixedDetail'*/
 
 Vue.use(Router)
 
@@ -14,11 +14,11 @@ export default new Router({
     {
       path: '/login',
       name: 'login',
-      component: Login
+      component: resolve => require(['@/components/login'],resolve)
     },
     {
       path: '/',
-      component: Layout,
+      component: resolve => require(['@/components/layout'],resolve),
       children:[
         {
           path: '/',

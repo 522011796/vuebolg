@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <i class="fa fa-home"></i>
     <router-view/>
   </div>
 </template>

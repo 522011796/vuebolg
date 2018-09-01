@@ -1,12 +1,12 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-//import Vue from 'vue'
+import Vue from 'vue'
 import App from './App'
 import router from './router'
-//import iView from 'iview'
-//import 'iview/dist/styles/iview.css'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'
 import store from './store';
-//import moment from 'moment';
+import moment from 'moment';
 import VueI18n from 'vue-i18n';
 import Validation from './validate/validation';
 import 'font-awesome/css/font-awesome.css'
@@ -61,7 +61,7 @@ var MarkdownIt = require('markdown-it')({
 //var md = new MarkdownIt();
 
 
-//Vue.use(iView);
+Vue.use(iView);
 //表单验证插件
 Vue.use(Validation);
 //国际化
